@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Gift Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🎁 Happy Gift Shop</h1>
+<p>Find the perfect gift</p>
+</header>
+
+<div class="controls">
+
+<input type="text" id="search" placeholder="Search gifts...">
+
+<select id="priceFilter">
+<option value="all">All Prices</option>
+<option value="500">Below ₹500</option>
+<option value="1000">Below ₹1000</option>
+<option value="2000">Below ₹2000</option>
+</select>
+
+<button onclick="toggleCart()">🛒 Cart</button>
+
+</div>
+
+<div id="products" class="products"></div>
+
+<div id="cart" class="cart">
+
+<h2>Your Cart</h2>
+
+<ul id="cartItems"></ul>
+
+<p>Delivery: ₹50</p>
+
+<p>Total: ₹<span id="total">0</span></p>
+
+<input id="coupon" placeholder="Coupon code">
+
+<button onclick="applyCoupon()">Apply Coupon</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
